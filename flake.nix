@@ -36,7 +36,7 @@
 
             # GTK / Surf
             gtk3
-            gcr
+            gcr_4
             webkitgtk_4_1
 
             # Graphics and GTK dependencies

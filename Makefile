@@ -1,19 +1,27 @@
-all : core surf
+.PHONY: all dwm dmenu st surf installclean
 
-core: dwm dmenu st
+all: dwm dmenu st surf
 
 dwm:
-	cd dwm
-	make clean install
+	$(MAKE) -C dwm clean all
 
 dmenu:
-	cd dmenu
-	make clean install
+	$(MAKE) -C dmenu clean all
 
 st:
-	cd st
-	make clean install
+	$(MAKE) -C st clean all
 
 surf:
-	cd surf
-	make clean install
+	$(MAKE) -C surf clean all
+
+install:
+	$(MAKE) -C dwm install
+	$(MAKE) -C dmenu install
+	$(MAKE) -C st install
+	$(MAKE) -C surf install
+
+clean:
+	$(MAKE) -C dwm clean
+	$(MAKE) -C dmenu clean
+	$(MAKE) -C st clean
+	$(MAKE) -C surf clean
