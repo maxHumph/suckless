@@ -22,6 +22,7 @@
             gnumake
             pkg-config
             git
+            meson
 
             # X11 libraries
             libX11
