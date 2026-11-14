@@ -2,7 +2,7 @@
   description = "Suckless build environment";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
   };
 
   outputs = { self, nixpkgs }:
@@ -29,6 +29,12 @@
             libXinerama
             libXrender
             libXrandr
+            libxkbcommon
+
+            # Wayland
+            wayland-scanner
+            wlroots_0_20
+            libinput
 
             # Fonts
             fontconfig
@@ -36,7 +42,7 @@
 
             # GTK / Surf
             gtk3
-            gcr_4
+            gcr
             webkitgtk_4_1
 
             # Graphics and GTK dependencies
