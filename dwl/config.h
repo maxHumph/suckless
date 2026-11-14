@@ -50,8 +50,8 @@ static const MonitorRule monrules[] = {
 /* keyboard */
 static const struct xkb_rule_names xkb_rules = {
   /* can specify fields: rules, model, layout, variant, options */
+  .layout  = "gb",
   .options = "ctrl:swapcaps",
-  /*.options = NULL,*/
 };
 
 static const int repeat_rate = 20;

@@ -38,6 +38,7 @@
             libinput
             scdoc
             fcft
+            libxcb-wm
 
             # Fonts
             fontconfig
