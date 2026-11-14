@@ -37,6 +37,7 @@
             wlroots_0_20
             libinput
             scdoc
+            fcft
 
             # Fonts
             fontconfig

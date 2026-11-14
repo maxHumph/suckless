@@ -50,10 +50,8 @@ static const MonitorRule monrules[] = {
 /* keyboard */
 static const struct xkb_rule_names xkb_rules = {
   /* can specify fields: rules, model, layout, variant, options */
-  /* example:
-     .options = "ctrl:nocaps",
-  */
-  .options = NULL,
+  .options = "ctrl:swapcaps",
+  /*.options = NULL,*/
 };
 
 static const int repeat_rate = 20;
@@ -115,8 +113,8 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
 
 /* commands */
-static const char *termcmd[] = { "kitty", NULL };
-static const char *menucmd[] = { "wofi --show drun", NULL };
+static const char *termcmd[] = { "foot", NULL };
+static const char *menucmd[] = { "wmenu-run", NULL };
 static const char *emacscmd[] = { "emacs", NULL };
 
 static const Key keys[] = {
