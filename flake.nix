@@ -36,6 +36,7 @@
             wayland-scanner
             wlroots_0_20
             libinput
+            scdoc
 
             # Fonts
             fontconfig
