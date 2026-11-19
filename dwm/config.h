@@ -15,7 +15,6 @@ static const char onyx[]            = "#0c0b0a";
 static const char blue_slate[]      = "#646e78";
 static const char mauve_bark[]      = "#7a5c58";
 
-
 static const char *colors[][3]      = {
   /*               fg         bg         border   */
   [SchemeNorm] = { bone, onyx, onyx },
@@ -65,7 +64,7 @@ static const Layout layouts[] = {
 static char dmenumon[8]; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", bone, "-nf", onyx, "-sb", blue_slate, "-sf", onyx, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *emacscmd[] = { "emacs", NULL };
+static const char *emacscmd[] = { "emacs", "-q", "-l", "~/.emacs-gui" };
 
 static const Key keys[] = {
   /* modifier                     key        function        argument */
